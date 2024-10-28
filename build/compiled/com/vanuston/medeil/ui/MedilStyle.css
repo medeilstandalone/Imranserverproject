@@ -1,0 +1,321 @@
+/*Default Theme Medeil*/
+
+
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the Scene                                     *
+ *                                                                             *
+ ******************************************************************************/
+.scene{
+    -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-color: #a6a6a3;
+    -fx-base: #999999;
+   -fx-accent: #333333;/*menu,listbox,... highlight color*/
+   -fx-mark-color: #666666;
+    -fx-background: #535353;
+    -fx-border-right-color: #666666;
+    -fx-border-left-color: #666666;
+    -fx-border-bottom-color: #666666;
+    -fx-border-top-color: #666666;
+}
+
+
+.button {
+    -fx-text-fill: #e4f3fc;
+    -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+    -fx-color: #333333;
+     -fx-stroke: #ffffff;
+    -fx-stroke-width: 5;
+}
+
+.button:hover{
+        -fx-text-fill: #000000;
+    -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+    -fx-color: #ff6600;
+     -fx-stroke: #ffffff;
+    -fx-stroke-width: 5;
+    -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 1 );
+}
+
+.choice-box{
+    -fx-font: Arial;
+    -fx-font-size: 12px;
+    -fx-fill: #cccccc;
+    }
+    .text-box{
+    -fx-text-align: right;
+}
+
+.DialogBox{
+    -fx-stroke: #333333;
+    -fx-stroke-width: 4.0;
+    -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #dedcdc);
+}
+.LoginBox{
+    -fx-stroke: #333333;
+    -fx-stroke-width: 4.0;
+}
+.leftmenuBar{
+    -fx-stroke: #333333;
+    -fx-stroke-width: 4;
+    -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #dedcdc);
+}
+.RectBackground{
+    -fx-stroke: #333333;
+    -fx-stroke-width: 4;
+    -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #dedcdc);
+}
+.ImageToolbarBg{
+    -fx-stroke: #333333;
+    -fx-stroke-width: 2;
+    -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #dedcdc);
+}
+.BottomTaskBar{
+        -fx-fill: #333333;
+}
+.linear-gradient{
+    -fx-stroke: #333333;
+    -fx-stroke-width: 4;
+    -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #dedcdc);
+}
+
+.LeftmenuHighlight{
+    -fx-opacity:0;
+}
+.LeftmenuHighlight:hover{
+    -fx-opacity:1;
+    -fx-border-style: solid;
+    -fx-stroke-width: 2;
+    -fx-stroke: linear (0%,0%) to (100%,0%) stops (0%, #333333) (100%, #d9e5c2);
+    -fx-fill:  linear (0%,0%) to (100%,0%) stops (0%, #99cc33) (100%, #d9e5c2);
+    -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 1 );
+}
+.labelFormHeading{
+    -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the ChoiceBox control                                        *
+ *                                                                             *
+ ******************************************************************************/
+
+.choice-box {
+    -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-background-radius: 0, 0, 0;
+}
+.choice-box:focused {
+      -fx-background-radius: 0, 0, 0;
+}
+.choice-box *.arrow {
+    -fx-background-color: Black;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 2 3.5 2 3.5;
+}
+#choice-box-popup-menu {
+    -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-background-radius: 0, 0, 0;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the menu control                                          *
+ *                                                                             *
+ ******************************************************************************/
+
+*.popup-menu {
+    -fx-background-color:linear (0%,0%) to (0%,100%) stops (0%,#ffffff) (100%,#999999);
+}
+
+.menu {
+    -fx-text-fill: #333333;
+}
+
+*.menu-item {
+    -fx-font: 12pt "Arial";
+    -fx-text-fill: #333333;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the Rectangle control                                          *
+ *                                                                             *
+ ******************************************************************************/
+ .rectMenuBg{
+ 	 -fx-opacity:0.75;
+     -fx-stroke: #ff6600;
+     -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #cccccc) (100%, #999999);
+}
+.rectbutton{
+    -fx-stroke: #333333;
+    -fx-stroke-width: 2;
+    -fx-fill: #cccccc;
+}
+ .rectFormHeader{
+  -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #000000);
+/*  -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #829e3f) (100%, #de3d27);*/
+}
+.rectbutton:focused{
+    -fx-stroke: #333333;
+    -fx-stroke-width: 2;
+    -fx-fill: #99cc33;
+    -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 1 );
+}
+.rectbutton:hover{
+    -fx-stroke: #333333;
+    -fx-stroke-width: 2;
+    -fx-fill: #99cc33;
+    -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 1 );
+}
+.rectbutton:pressed{
+    -fx-stroke: #333333;
+    -fx-stroke-width: 2;
+    -fx-fill: #ff9933;
+}
+
+.rectSubmenu
+{
+    -fx-width:222.00;
+    -fx-stroke: #333333;
+    -fx-stroke-width: 2;
+    -fx-fill: #b4b4b4;
+}
+.rectSubmenu-clicked
+{
+    -fx-width:230.00;
+    -fx-stroke: #333333;
+    -fx-stroke-width: 0;
+    -fx-fill: #b4b4b4;
+}
+ .rectTitlebar{
+  -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #000000);
+}
+.rectTableBorder{
+    -fx-stroke: -fx-accent;
+    -fx-stroke-width: 2;
+    -fx-fill:null;
+    -fx-arc-width:10;
+    -fx-arc-height:10;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the TextBox control                                          *
+ *                                                                             *
+ ******************************************************************************/
+.text-box {
+    -fx-padding: 0;
+    -fx-background-radius: 0, 0, 0;
+    -fx-background-insets: 0, 1, 2;
+}
+.Borderless-text-box{
+-fx-border-width:0;
+-fx-text-align: right;
+}
+.mandatory-text-box{
+-fx-border-width:2;
+-fx-background-color:#e1e1e1;
+-fx-border-color:#996633;
+-fx-vertical-align: middle;
+-fx-height: 40.0;
+}
+.notfilled-text-box{
+-fx-text-fill: red;
+-fx-border-width:2;
+-fx-background-color:#e1e1e1;
+-fx-border-color:red;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the ListView                                        *
+ *                                                                             *
+ ******************************************************************************/
+.list-view {
+   -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-font-size: 16px;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the Separator control                                     *
+ *                                                                             *
+ ******************************************************************************/
+.separator:horizontal *.line{
+    -fx-border-color: -fx-accent;
+    -fx-opacity:0.75;
+    -fx-border-style:solid;
+    -fx-padding: 1
+}
+.separator:vertical *.line{
+    -fx-border-color: -fx-accent;
+    -fx-opacity:0.75;
+    -fx-border-style:solid;
+    -fx-padding: 1
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the ToggleButton control                                     *
+ *                                                                             *
+ ******************************************************************************/
+
+.marquees {
+
+ -fx-border-color:-fx-accent;
+ -fx-border-width:2;
+ -fx-font-family: Arial,Helvetica,sans-serif;
+ -fx-font-size: 16px;
+ -fx-font-weight: bold;
+
+}
+
+.toggle-button {
+-fx-background-color: #eff0ed;
+-fx-background-radius: 0, 0, 0;
+-fx-background-insets: 0, 1, 2;
+ -fx-text-fill:#000000;
+ -fx-border-color:-fx-accent;
+ -fx-border-width:2;
+ -fx-font-family: Arial,Helvetica,sans-serif;
+ -fx-font-size: 20px;
+  -fx-font-weight: bold;
+
+}
+.toggle-button:hover {
+    -fx-background-color: #373836;
+    -fx-border-color:-fx-accent;
+    -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 1 );
+}
+.toggle-button:focused {
+      -fx-background-color:#373836;
+      -fx-border-color:-fx-accent;
+      -fx-text-fill:#ffffff;
+}
+.toggle-button:selected {
+    -fx-text-fill: #ffffff;
+    -fx-background-color:#373836;
+}
+.toggle-button:selected:focused {
+     -fx-background-color:#373836;
+     -fx-border-color:-fx-accent;
+     -fx-text-fill:#ffffff;
+}
+.toggle-button:disabled {
+    -fx-opacity: .4;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the Form                                        *
+ *                                                                             *
+ ******************************************************************************/
+.form-background{
+
+  -fx-stroke: #333333;
+  -fx-stroke-width: 2;
+  -fx-arc-height:5;
+  -fx-arc-width:5;
+    /*-fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #fcfcfc) (100%, #999999);*/
+-fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #dedcdc);
+}

@@ -1,0 +1,10 @@
+Sales | | |109240 |PARACIP_60ML |CIP |4150 |1 |2016-08-01
+Sales | | |35852 |GEMER\ P2_ |SUN |0572 |1 |2016-09-01
+Sales |sdfsdfsdfsdf | |35803 |GELUSIL\ -MPS_ |PFI |12121 |1 |2019-01-01
+CustInfo |CC0000001 |hari |23 |Male
+CustInfo |CC0000002 |weqqq |27 |Male
+CustInfo |CC0000003 |jack |23 |Male
+CustInfo |CC0000004 |bala |23 |Male
+CustInfo |CC0000005 |naveen |24 |Male
+CustInfo |CC0000006 |anand |23 |Male
+CustInfo |CC0000007 |sdfsdfsdfsdf |24 |Male

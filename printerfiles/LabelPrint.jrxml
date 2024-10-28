@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LabelPriint" language="groovy" pageWidth="165" pageHeight="200" columnWidth="165" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="billno" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{billno}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="billmodel" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from label_print where prescription_no=$P{billno}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="prescription_no" class="java.lang.Integer"/>
+	<field name="patient_name" class="java.lang.String"/>
+	<field name="doctor_name" class="java.lang.String"/>
+	<field name="medicine_name" class="java.lang.String"/>
+	<field name="durg_interaction" class="java.lang.String"/>
+	<field name="federal_caution" class="java.lang.String"/>
+	<field name="filled_date" class="java.lang.String"/>
+	<field name="discard_date" class="java.lang.String"/>
+	<field name="qty" class="java.lang.Integer"/>
+	<field name="morning" class="java.lang.String"/>
+	<field name="afternoon" class="java.lang.String"/>
+	<field name="evening" class="java.lang.String"/>
+	<field name="night" class="java.lang.String"/>
+	<field name="status" class="java.lang.Integer"/>
+	<variable name="height" class="java.lang.Integer"/>
+	<summary>
+		<band height="115">
+			<staticText>
+				<reportElement x="-5" y="0" width="164" height="12"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Blue Bay Pharmacy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="12" width="158" height="10"/>
+				<textElement>
+					<font fontName="Serif" size="6" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Labourdonnais Street., Mahebourg, Ph : 59160693]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="23" width="150" height="1"/>
+			</line>
+			<textField>
+				<reportElement x="22" y="24" width="27" height="10"/>
+				<textElement>
+					<font fontName="Serif" size="6" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{prescription_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="94" y="24" width="53" height="10"/>
+				<textElement>
+					<font fontName="Serif" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{filled_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="48" y="35" width="100" height="10"/>
+				<textElement>
+					<font fontName="Serif" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{patient_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="48" width="145" height="16"/>
+				<textElement>
+					<font fontName="Serif" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{federal_caution}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3" y="83" width="91" height="12"/>
+				<textElement>
+					<font fontName="Serif" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{medicine_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="24" y="99" width="25" height="10"/>
+				<textElement>
+					<font fontName="Serif" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="79" y="99" width="39" height="10"/>
+				<textElement>
+					<font fontName="Serif" size="7"/>
+				</textElement>
+				<text><![CDATA[Refill Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="99" width="17" height="10"/>
+				<textElement>
+					<font fontName="Serif" size="7"/>
+				</textElement>
+				<text><![CDATA[Qty :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="24" width="17" height="10"/>
+				<textElement>
+					<font fontName="Serif" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rx:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="24" width="22" height="10"/>
+				<textElement>
+					<font fontName="Serif" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="36" width="45" height="10"/>
+				<textElement>
+					<font fontName="Serif" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cust.Name :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="65" width="145" height="16"/>
+				<textElement>
+					<font fontName="Serif" size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{durg_interaction}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="118" y="99" width="47" height="10"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{discard_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

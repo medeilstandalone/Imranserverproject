@@ -1,0 +1,2 @@
+CustInfo |hari |23 |Male
+CustInfo |weqqq |27 |Male

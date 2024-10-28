@@ -1,0 +1,38 @@
+02-01-2015   02:48:25 PM | LoggerName : Main  | run() : bf Server startup
+02-01-2015   02:48:26 PM | LoggerName : ServerSkeletonFactory  | IP:192.168.1.22, port:20202
+02-01-2015   02:48:26 PM | LoggerName : Main  | run() : Server successfully started...
+02-01-2015   02:48:26 PM | LoggerName : Utilities  | Method:getConnection Entry Free:13, Total:15, Max:494
+02-01-2015   02:48:26 PM | LoggerName : Utilities  | Class:DBConnection Method:makeTransConnection Entry Free:13, Total:15, Max:494
+02-01-2015   02:48:27 PM | LoggerName : Utilities  | Class:DBConnection Method:makeTransConnection Exit Max:15
+02-01-2015   02:48:32 PM | LoggerName : GetProductInfo  | Init : starting
+02-01-2015   02:48:33 PM | LoggerName : Utilities  | System String = EC-A8-6B-70-73-AA
+02-01-2015   02:48:34 PM | LoggerName : Utilities  | Class:Main Activation Status :[Activate='true', Configurated='true', LicenseCount='1', Validity Days='365', Remaining Days='354'='354', Installed Date='2014-12-23 15:44:35.0', Expiry Date='2015-12-23'='2015-12-23']
+02-01-2015   02:48:34 PM | LoggerName : Utilities  | RDays=  '354'  RDays1 = '354' 
+02-01-2015   02:48:34 PM | LoggerName : Utilities  | Return MEssage = 
+02-01-2015   02:48:35 PM | LoggerName : Utilities  | Method:getConnection Entry Free:6, Total:29, Max:494
+02-01-2015   02:48:36 PM | LoggerName : Utilities  | Method:getConnection Entry Free:19, Total:36, Max:494
+02-01-2015   02:48:37 PM | LoggerName : Utilities  | Method:getConnection Entry Free:33, Total:57, Max:494
+02-01-2015   02:48:38 PM | LoggerName : com.vanuston.medeil.dao.ReceiptDAO  | Method:getConnection Entry Free:38, Total:78, Max:494
+02-01-2015   02:48:39 PM | LoggerName : Masters  | Method:getConnection Entry Free:54, Total:97, Max:494
+02-01-2015   02:48:40 PM | LoggerName : Masters  | Method:getConnection Entry Free:61, Total:114, Max:494
+02-01-2015   02:48:41 PM | LoggerName : Inventory  | Method:getConnection Entry Free:74, Total:132, Max:494
+02-01-2015   02:48:43 PM | LoggerName : Utilities  | Init : End
+02-01-2015   02:48:43 PM | LoggerName : Utilities  | StartUp() : starting
+02-01-2015   02:48:43 PM | LoggerName : Utilities  | Welcome to MEDEIL !
+02-01-2015   02:48:44 PM | LoggerName : Utilities  | Method:getConnection Entry Free:83, Total:155, Max:494
+02-01-2015   02:48:50 PM | LoggerName : Utilities  | System String = EC-A8-6B-70-73-AA
+02-01-2015   02:48:50 PM | LoggerName : Utilities  | Class:Main Activation Status :[Activate='true', Configurated='true', LicenseCount='1', Validity Days='365', Remaining Days='354'='354', Installed Date='2014-12-23 15:44:35.0', Expiry Date='2015-12-23'='2015-12-23']
+02-01-2015   02:48:50 PM | LoggerName : Utilities  | RDays=  '354'  RDays1 = '354' 
+02-01-2015   02:48:50 PM | LoggerName : Utilities  | Return MEssage = 
+02-01-2015   02:48:50 PM | LoggerName : Utilities  | System String = EC-A8-6B-70-73-AA
+02-01-2015   02:48:51 PM | LoggerName : Utilities  | System String = EC-A8-6B-70-73-AA
+02-01-2015   02:48:51 PM | LoggerName : Utilities  | Class:Main Activation Status :[Activate='true', Configurated='true', LicenseCount='1', Validity Days='365', Remaining Days='354'='354', Installed Date='2014-12-23 15:44:35.0', Expiry Date='2015-12-23'='2015-12-23']
+02-01-2015   02:48:51 PM | LoggerName : Utilities  | RDays=  '354'  RDays1 = '354' 
+02-01-2015   02:48:51 PM | LoggerName : Utilities  | Return MEssage = 
+02-01-2015   02:48:52 PM | LoggerName : CronSchedule  | Schedule init...
+02-01-2015   02:48:52 PM | LoggerName : CronSchedule  | str:Monday
+02-01-2015   02:48:52 PM | LoggerName : CronSchedule  | schedule start
+02-01-2015   02:48:52 PM | LoggerName : CronSchedule  | select count(ss_no) as sa  from stock_statement where stock_date='2015-01-02'
+02-01-2015   02:53:07 PM | LoggerName : Utilities  | Logout Memory Free:52, Total:155, Max:494
+02-01-2015   02:53:07 PM | LoggerName : Utilities  | Class:Main Medthod : Logout()  Logout Called..
+02-01-2015   02:53:07 PM | LoggerName : Utilities  | Class : Autobackup  Method  :usingDump  Exception:Cannot run program "Data\bin\mysqldump": CreateProcess error=2, The system cannot find the file specified

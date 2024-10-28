@@ -1,0 +1,296 @@
+/*Blue Theme Medeil*/
+
+
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the Scene                                     *
+ *                                                                             *
+ ******************************************************************************/
+.scene{
+    -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-color: #a7cfee;
+    -fx-base: #cbe8ff;
+   -fx-accent: #0c60ae;/*menu,listbox,... highlight color*/
+   -fx-mark-color: #0a4d8b;
+    -fx-background: #535353;
+    -fx-border-right-color: #0a4d8b;
+    -fx-border-left-color: #0a4d8b;
+    -fx-border-bottom-color: #0a4d8b;
+    -fx-border-top-color: #0a4d8b;
+}
+
+
+.button {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+    -fx-color: #0a4b87;
+     -fx-stroke: #ffffff;
+    -fx-stroke-width: 5;
+}
+
+.button:hover{
+        -fx-text-fill: #ffffff;
+    -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+    -fx-color: #333333;
+     -fx-stroke: #ffffff;
+    -fx-stroke-width: 5;
+    -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 1 );
+}
+
+.choice-box{
+    -fx-font: Arial;
+    -fx-font-size: 12px;
+    -fx-fill: #d6dff7;
+    }
+    .text-box{
+    -fx-text-align: right;
+}
+
+.DialogBox{
+    -fx-stroke: #0c60ae;
+    -fx-stroke-width: 4.0;
+    -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #e1e7ed);
+}
+.LoginBox{
+    -fx-stroke: #0c60ae;
+    -fx-stroke-width: 4.0;
+}
+.leftmenuBar{
+    -fx-stroke: #0c60ae;
+    -fx-stroke-width: 4;
+    -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #e1e7ed);
+}
+.RectBackground{
+    -fx-stroke: #0c60ae;
+    -fx-stroke-width: 4;
+    -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #e1e7ed);
+}
+.ImageToolbarBg{
+    -fx-stroke: #0c60ae;
+    -fx-stroke-width: 2;
+    -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #e1e7ed);
+}
+.BottomTaskBar{
+        -fx-fill: #0c60ae;
+}
+.linear-gradient{
+  -fx-stroke: #0c60ae;
+  -fx-stroke-width: 4;
+  -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #e1e7ed);
+}
+
+.LeftmenuHighlight{
+    -fx-opacity:0;
+}
+.LeftmenuHighlight:hover{
+    -fx-opacity:1;
+    -fx-border-style: solid;
+    -fx-stroke-width: 2;
+    -fx-stroke: linear (0%,0%) to (100%,0%) stops (0%, #0c60ae) (100%, #f5f8fb);
+    -fx-fill:  linear (0%,0%) to (100%,0%) stops (0%, #aed4f8) (100%, #ebf3fa);
+    -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 1 );
+}
+.labelFormHeading{
+    -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the ChoiceBox control                                        *
+ *                                                                             *
+ ******************************************************************************/
+
+.choice-box {
+    -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-background-radius: 0, 0, 0;
+}
+.choice-box:focused {
+      -fx-background-radius: 0, 0, 0;
+}
+.choice-box *.arrow {
+    -fx-background-color: Black;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 2 3.5 2 3.5;
+}
+#choice-box-popup-menu {
+    -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-background-radius: 0, 0, 0;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the menu control                                          *
+ *                                                                             *
+ ******************************************************************************/
+
+*.popup-menu {
+    -fx-background-color:linear (0%,0%) to (0%,100%) stops (0%,#ffffff) (100%,#cee4f9);
+}
+
+.menu {
+    -fx-text-fill: #333333;
+}
+
+*.menu-item {
+    -fx-font: 12pt "Arial";
+    -fx-text-fill: #333333;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the Rectangle control                                          *
+ *                                                                             *
+ ******************************************************************************/
+ .rectMenuBg{
+ 	 -fx-opacity:0.75;
+     -fx-stroke: #333333;
+     -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #c8e1f8) (100%, #deedfb);
+}
+.rectbutton{
+    -fx-stroke: #0c60ae;
+    -fx-stroke-width: 2;
+    -fx-fill: #c8e1f8;
+}
+ .rectFormHeader{
+  -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #0c60ae);
+/*  -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #829e3f) (100%, #de3d27);*/
+}
+.rectbutton:focused{
+    -fx-stroke: #0c60ae;
+    -fx-stroke-width: 2;
+    -fx-fill: #9bc9f4;
+    -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 1 );
+}
+.rectbutton:hover{
+    -fx-stroke: #0c60ae;
+    -fx-stroke-width: 2;
+    -fx-fill: #9bc9f4;
+    -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 1 );
+}
+.rectbutton:pressed{
+    -fx-stroke: #0c60ae;
+    -fx-stroke-width: 2;
+    -fx-fill: #ff9933;
+}
+
+.rectSubmenu
+{
+    -fx-width:222.00;
+    -fx-stroke: #0c60ae;
+    -fx-stroke-width: 2;
+    -fx-fill: #e7f7da;
+}
+.rectSubmenu-clicked
+{
+    -fx-width:230.00;
+    -fx-stroke: #0c60ae;
+    -fx-stroke-width: 0;
+    -fx-fill: #e7f7da;
+}
+ .rectTitlebar{
+  -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #0b467c);
+}
+.rectTableBorder{
+    -fx-stroke: -fx-accent;
+    -fx-stroke-width: 2;
+    -fx-fill:null;
+    -fx-arc-width:10;
+    -fx-arc-height:10;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the TextBox control                                          *
+ *                                                                             *
+ ******************************************************************************/
+.text-box {
+    -fx-padding: 0;
+    -fx-background-radius: 0, 0, 0;
+    -fx-background-insets: 0, 1, 2;
+}
+.Borderless-text-box{
+-fx-border-width:0;
+-fx-text-align: right;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the ListView                                        *
+ *                                                                             *
+ ******************************************************************************/
+.list-view {
+   -fx-font-family: Arial,Helvetica,sans-serif;
+    -fx-font-size: 16px;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the Separator control                                     *
+ *                                                                             *
+ ******************************************************************************/
+.separator:horizontal *.line{
+    -fx-border-color: -fx-accent;
+    -fx-opacity:0.75;
+    -fx-border-style:solid;
+    -fx-padding: 1
+}
+.separator:vertical *.line{
+    -fx-border-color: -fx-accent;
+    -fx-opacity:0.75;
+    -fx-border-style:solid;
+    -fx-padding: 1
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the ToggleButton control                                     *
+ *                                                                             *
+ ******************************************************************************/
+
+.toggle-button {
+-fx-background-color: #eff0ed;
+-fx-background-radius: 0, 0, 0;
+-fx-background-insets: 0, 1, 2;
+ -fx-text-fill:#000000;
+ -fx-border-color:-fx-accent;
+ -fx-border-width:2;
+ -fx-font-family: Arial,Helvetica,sans-serif;
+ -fx-font-size: 20px;
+  -fx-font-weight: bold;
+
+}
+.toggle-button:hover {
+    -fx-background-color: #218bce;
+    -fx-border-color:-fx-accent;
+    -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 1 );
+}
+.toggle-button:focused {
+      -fx-background-color:#218bce;
+      -fx-border-color:-fx-accent;
+      -fx-text-fill:#ffffff;
+}
+.toggle-button:selected {
+    -fx-text-fill: #ffffff;
+    -fx-background-color:#218bce;
+}
+.toggle-button:selected:focused {
+     -fx-background-color:#218bce;
+     -fx-border-color:-fx-accent;
+     -fx-text-fill:#ffffff;
+}
+.toggle-button:disabled {
+    -fx-opacity: .4;
+}
+/*******************************************************************************
+ *                                                                             *
+ * CSS Styles for the Form                                        *
+ *                                                                             *
+ ******************************************************************************/
+.form-background{
+  -fx-stroke: #0c60ae;
+  -fx-stroke-width: 2;
+  -fx-arc-height:5;
+  -fx-arc-width:5;
+ -fx-fill: linear (0%,0%) to (0%,100%) stops (0%, #ffffff) (100%, #edf4fa);
+}

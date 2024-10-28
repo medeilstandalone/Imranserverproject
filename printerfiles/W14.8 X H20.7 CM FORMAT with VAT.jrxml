@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="gurureport1" language="groovy" pageWidth="421" pageHeight="460" columnWidth="401" leftMargin="20" rightMargin="0" topMargin="20" bottomMargin="1" isIgnorePagination="true">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[$P{SUBREPORT_DIR}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="billno" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{billno}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="billmodel" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{billmodel}]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[CALL pro_advancedprint($P{billno},$P{billmodel})]]>
+	</queryString>
+	<field name="cust_name" class="java.lang.String"/>
+	<field name="doctor_name" class="java.lang.String"/>
+	<field name="bill_no" class="java.lang.String"/>
+	<field name="item_name" class="java.lang.String"/>
+	<field name="formulation" class="java.lang.String"/>
+	<field name="qty" class="java.lang.Integer"/>
+	<field name="mfr_name" class="java.lang.String"/>
+	<field name="batch_no" class="java.lang.String"/>
+	<field name="expiry_date" class="java.lang.String"/>
+	<field name="unit_price" class="java.lang.Double"/>
+	<field name="sub_total" class="java.lang.Double"/>
+	<field name="unit_discount" class="java.lang.Double"/>
+	<field name="unit_vat" class="java.lang.Double"/>
+	<field name="total_discount" class="java.lang.Double"/>
+	<field name="total_amount" class="java.lang.Double"/>
+	<field name="total_items" class="java.lang.Integer"/>
+	<field name="total_qty" class="java.lang.Integer"/>
+	<field name="sumdiscount" class="java.lang.Double"/>
+	<field name="discountamt" class="java.lang.Double"/>
+	<field name="disvalue" class="java.lang.Double"/>
+	<field name="sumamt" class="java.lang.Double"/>
+	<field name="bill_type" class="java.lang.String"/>
+	<field name="shop_name" class="java.lang.String"/>
+	<field name="dl_no" class="java.lang.String"/>
+	<field name="tin_no" class="java.lang.String"/>
+	<field name="address1" class="java.lang.String"/>
+	<field name="address2" class="java.lang.String"/>
+	<field name="address3" class="java.lang.String"/>
+	<field name="city" class="java.lang.String"/>
+	<field name="pincode" class="java.lang.String"/>
+	<field name="contact_no1" class="java.lang.String"/>
+	<field name="contact_no2" class="java.lang.String"/>
+	<field name="mobile_no" class="java.lang.String"/>
+	<variable name="variable1" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{sub_total}]]></variableExpression>
+	</variable>
+	<variable name="variable2" class="java.lang.Double">
+		<variableExpression><![CDATA[$F{total_discount}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="3" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="94">
+			<textField>
+				<reportElement x="1" y="0" width="398" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{shop_name}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="19" width="398" height="15"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[($F{address1}+", "+$F{address2}+", "+$F{address3}+", "+$F{city}).toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="33" width="398" height="15"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[("DL No. : "+$F{dl_no}+","+"TIN NO: "+$F{tin_no}).toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="46" width="398" height="15"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Phone: "+$F{contact_no1}+", "+$F{contact_no2}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="60" width="399" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="273" y="61" width="108" height="15"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Bill No. "+$F{bill_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="61" width="204" height="15"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Prescribed by "+($F{doctor_name}.toUpperCase())]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="75" width="144" height="15"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Name "+($F{cust_name}.toUpperCase())]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="1" y="93" width="398" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="156" y="74" width="100" height="20"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{bill_type}.replace("_"," ").toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="301" y="75" width="76" height="14"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="hh:mm">
+				<reportElement x="360" y="75" width="38" height="14"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="272" y="75" width="33" height="14"/>
+				<textElement>
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date ]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="2" width="25" height="17"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[QTY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="2" width="87" height="17"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[DESCRIPTION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="2" width="36" height="17"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[VAT %]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="204" y="2" width="41" height="17"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[BATCH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="271" y="1" width="48" height="17"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[EXPIRY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="334" y="1" width="55" height="17"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[AMOUNT]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="19" width="399" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="19" splitType="Stretch">
+			<textField pattern="">
+				<reportElement x="275" y="2" width="35" height="15">
+					<printWhenExpression><![CDATA[new Boolean($F{item_name}!=null)]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{expiry_date}.toString()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="37" y="2" width="111" height="15">
+					<printWhenExpression><![CDATA[new Boolean($F{item_name}!=null)]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[($F{item_name}+" "+$F{formulation}).replace("_"," ").toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3" y="2" width="27" height="15">
+					<printWhenExpression><![CDATA[new Boolean($F{item_name}!=null)]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="2" width="67" height="15">
+					<printWhenExpression><![CDATA[new Boolean($F{item_name}!=null)]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{batch_no}]]></textFieldExpression>
+			</textField>
+			<textField pattern="##.00">
+				<reportElement x="291" y="2" width="99" height="15" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true">
+					<printWhenExpression><![CDATA[new Boolean($F{item_name}!=null)]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{sub_total}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="155" y="2" width="36" height="15">
+					<printWhenExpression><![CDATA[new Boolean($F{item_name}!=null)]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{unit_vat}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement isPrintRepeatedValues="false" x="3" y="17" width="399" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="93">
+			<line>
+				<reportElement x="-1" y="69" width="399" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="3" y="70" width="36" height="14"/>
+				<textElement/>
+				<text><![CDATA[E&O.E]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="70" width="84" height="9" isPrintInFirstWholeBand="true"/>
+				<textElement textAlignment="Center" rotation="None" lineSpacing="Single" markup="none">
+					<font fontName="Verdana" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Powered By MEDEIL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="52" width="362" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Wish You a Speed Recovery!
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="2" width="38" height="15"/>
+				<textElement>
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Item(s):]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="2" width="36" height="16"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="127" y="22" width="33" height="14"/>
+				<textElement>
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[R.Off:]]></text>
+			</staticText>
+			<textField pattern="#0.00">
+				<reportElement x="159" y="22" width="28" height="15"/>
+				<textElement>
+					<font size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[($V{variable1}-$V{variable2})-$F{total_amount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="205" y="-1" width="105" height="17"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="SansSerif" size="11"/>
+				</textElement>
+				<text><![CDATA[TOTAL AMOUNT :]]></text>
+			</staticText>
+			<textField pattern="#0.00">
+				<reportElement x="300" y="0" width="90" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{variable1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="205" y="16" width="105" height="17"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="SansSerif" size="11"/>
+				</textElement>
+				<text><![CDATA[TOTAL DISCOUNT :]]></text>
+			</staticText>
+			<textField pattern="#0.00">
+				<reportElement x="302" y="16" width="88" height="14"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="11"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{variable2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="219" y="33" width="91" height="18"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[| GRAND TOTAL :]]></text>
+			</staticText>
+			<textField pattern="#0.00">
+				<reportElement x="300" y="33" width="92" height="18"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{total_amount}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="2" y="52" width="398" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1" y="0" width="403" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</line>
+		</band>
+	</lastPageFooter>
+	<summary>
+		<band splitType="Stretch">
+			<elementGroup/>
+		</band>
+	</summary>
+</jasperReport>

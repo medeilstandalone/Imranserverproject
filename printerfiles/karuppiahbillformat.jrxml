@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="karuppiahbillformat" language="groovy" pageWidth="595" pageHeight="290" columnWidth="550" leftMargin="25" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="billno" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{billno}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="billmodel" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{billmodel}]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[CALL pro_advancedprint($P{billno},$P{billmodel})]]>
+	</queryString>
+	<field name="cust_name" class="java.lang.String"/>
+	<field name="doctor_name" class="java.lang.String"/>
+	<field name="bill_no" class="java.lang.String"/>
+	<field name="bill_date" class="java.sql.Date"/>
+	<field name="total_vat" class="java.lang.Double"/>
+	<field name="item_name" class="java.lang.String"/>
+	<field name="formulation" class="java.lang.String"/>
+	<field name="qty" class="java.lang.Integer"/>
+	<field name="mfr_name" class="java.lang.String"/>
+	<field name="batch_no" class="java.lang.String"/>
+	<field name="expiry_date" class="java.lang.String"/>
+	<field name="unit_price" class="java.lang.Double"/>
+	<field name="sub_total" class="java.lang.Double"/>
+	<field name="unit_discount" class="java.lang.Double"/>
+	<field name="unit_vat" class="java.lang.Double"/>
+	<field name="total_discount" class="java.lang.Double"/>
+	<field name="total_amount" class="java.lang.Double"/>
+	<field name="total_items" class="java.lang.Integer"/>
+	<field name="total_qty" class="java.lang.Integer"/>
+	<field name="bill_type" class="java.lang.String"/>
+	<field name="shop_name" class="java.lang.String"/>
+	<field name="dl_no" class="java.lang.String"/>
+	<field name="tin_no" class="java.lang.String"/>
+	<field name="address1" class="java.lang.String"/>
+	<field name="address2" class="java.lang.String"/>
+	<field name="address3" class="java.lang.String"/>
+	<field name="city" class="java.lang.String"/>
+	<field name="pincode" class="java.lang.String"/>
+	<field name="contact_no1" class="java.lang.String"/>
+	<field name="contact_no2" class="java.lang.String"/>
+	<field name="mobile_no" class="java.lang.String"/>
+	<field name="sumdiscount" class="java.lang.Double"/>
+	<field name="discountamt" class="java.lang.Double"/>
+	<field name="disvalue" class="java.lang.Double"/>
+	<field name="sumamt" class="java.lang.Double"/>
+	<variable name="variable1" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{sub_total}+($F{sub_total}*($F{unit_vat}/100))]]></variableExpression>
+	</variable>
+	<group name="subtotal">
+		<groupExpression><![CDATA[$F{sub_total}+($F{sub_total}*($F{unit_vat}/100))]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="72" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="535" height="71"/>
+				<textField>
+					<reportElement x="296" y="2" width="108" height="15"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{bill_no}]]></textFieldExpression>
+				</textField>
+				<textField pattern="hh:mm">
+					<reportElement x="351" y="16" width="38" height="14"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+				<textField pattern="dd-MM-yyyy/">
+					<reportElement x="298" y="17" width="78" height="14"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.util.Date"><![CDATA[$F{bill_date}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="61" y="2" width="100" height="15"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{doctor_name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="62" y="17" width="100" height="15"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{cust_name}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<frame>
+				<reportElement x="2" y="0" width="533" height="12"/>
+				<textField>
+					<reportElement x="2" y="0" width="41" height="12"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{qty}+" "+$F{formulation}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="57" y="0" width="100" height="12"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{item_name}.replace("_","").toUpperCase()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="243" y="0" width="36" height="12"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{mfr_name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="274" y="0" width="40" height="12"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{batch_no}]]></textFieldExpression>
+				</textField>
+				<textField pattern="">
+					<reportElement x="315" y="0" width="27" height="12"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[$F{expiry_date}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="354" y="0" width="34" height="12"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[(($F{unit_vat}.toString()).replace(".0","")+"%").toString()]]></textFieldExpression>
+				</textField>
+				<textField pattern="#0.00">
+					<reportElement x="381" y="0" width="52" height="12"/>
+					<textElement textAlignment="Right">
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$F{sub_total}+($F{sub_total}*($F{unit_vat}/100))]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="72" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="535" height="43"/>
+				<textField pattern="#0.00">
+					<reportElement x="337" y="10" width="100" height="21"/>
+					<textElement textAlignment="Right" markup="none">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{variable1}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#0.00">
+					<reportElement x="29" y="2" width="78" height="14"/>
+					<textElement textAlignment="Right">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{variable1}-$F{total_vat}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#0.00">
+					<reportElement x="161" y="2" width="65" height="14"/>
+					<textElement textAlignment="Right">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$F{total_vat}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="135" y="2" width="35" height="14"/>
+					<textElement/>
+					<text><![CDATA[VAT:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="4" y="2" width="35" height="14"/>
+					<textElement/>
+					<text><![CDATA[Value:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="65" y="15" width="84" height="17"/>
+					<textElement/>
+					<textFieldExpression class="java.lang.Integer"><![CDATA[$F{total_items}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="5" y="15" width="53" height="14"/>
+					<textElement/>
+					<text><![CDATA[Total Items:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="149" y="14" width="21" height="14"/>
+					<textElement/>
+					<text><![CDATA[Qty:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="170" y="16" width="100" height="14"/>
+					<textElement/>
+					<textFieldExpression class="java.lang.Integer"><![CDATA[$F{total_qty}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<staticText>
+				<reportElement x="0" y="59" width="550" height="13"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Wish You a Speed Recovery!
+]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

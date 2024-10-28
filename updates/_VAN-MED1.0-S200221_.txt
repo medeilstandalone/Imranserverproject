@@ -1,0 +1,39 @@
+Sales | | |1066 |Lacson\ Syrup\ 150\ ml_ |ASP |6 |0 |2025-04-01
+Sales | | |1066 |Lacson\ Syrup\ 150\ ml_ |ASP |6 |0 |2025-04-01
+Sales | | |1066 |Lacson\ Syrup\ 150\ ml_ |ASP |6 |0 |2025-04-01
+Sales | | |1066 |Lacson\ Syrup\ 150\ ml_ |ASP |6 |0 |2025-04-01
+Sales | | |1066 |Lacson\ Syrup\ 150\ ml_ |ASP |6 |0 |2025-04-01
+Sales | | |2738 |Karbofin\ Forte\ Caps\ x\ 30_ |TOP |6 |2 |2026-07-01
+Sales | | |2738 |Karbofin\ Forte\ Caps\ x\ 30_ |TOP |6 |2 |2026-07-01
+Sales | | |2738 |Karbofin\ Forte\ Caps\ x\ 30_ |TOP |6 |2 |2026-07-01
+Sales | | |2738 |Karbofin\ Forte\ Caps\ x\ 30_ |TOP |6 |3 |2026-07-01
+Sales | | |1066 |Lacson\ Syrup\ 150\ ml_ |ASP |6 |0 |2025-04-01
+Sales | | |1066 |Lacson\ Syrup\ 150\ ml_ |ASP |6 |4 |2025-04-01
+Sales | | |2738 |Karbofin\ Forte\ Caps\ x\ 30_ |TOP |6 |0 |2026-07-01
+Sales | | |1107 |Paxetas\ 10mg\ tabs\ x\ 30_ |INT |6 |0 |2024-10-01
+Sales |Pem\ Mahendradutt | |2009 |Powergra\ 50mg\ tabs\ x\ 4_ |UME |6 |0 |2026-09-01
+Sales | | |131 |Largactil\ 100mg\ tabs\ x30_ |UNI |6 |0 |2026-05-01
+Sales |Nazlee\ Hon\ Pin | |1066 |Lacson\ Syrup\ 150\ ml_ |ASP |6 |0 |2025-04-01
+Sales |Highway\ Co\ Ltd | |1107 |Paxetas\ 10mg\ tabs\ x\ 30_ |INT |6 |44 |2024-10-01
+Sales | | |2009 |Powergra\ 50mg\ tabs\ x\ 4_ |UME |6 |1 |2026-09-01
+Sales | | |5552 |Jardy\ Met\ 12.5/1000\ Tabs\ x\ 28_ |HYP |6 |4 |2025-02-01
+Sales | | |2044 |Powergra\ 100mg\ tabs\ x\ 4_ |UME |6 |3 |2025-08-01
+Sales | | |2044 |Powergra\ 100mg\ tabs\ x\ 4_ |UME |6 |4 |2025-08-01
+Sales | | |2009 |Powergra\ 50mg\ tabs\ x\ 4_ |UME |6 |2 |2026-09-01
+Sales | | |1180 |Optifree\ Express\ 120ml_ |ALC |6 |1 |2025-05-01
+Sales | | |1324 |Lasilix\ 20mg\ faible\ tabs\ x\ 30_ |SAN |6 |1 |2025-12-01
+Sales | | |2044 |Powergra\ 100mg\ tabs\ x\ 4_ |UME |6 |1 |2025-08-01
+Sales | | |9000 |Dapzin\ 10\ M\ Plus\ Tabs\ x\ 30_ |FTM |6 |1 |2026-01-01
+Sales | | |2738 |Karbofin\ Forte\ Caps\ x\ 30_ |TOP |6 |1 |2026-07-01
+Sales | | |1066 |Lacson\ Syrup\ 150\ ml_ |ASP |6 |1 |2025-04-01
+Sales | | |1107 |Paxetas\ 10mg\ tabs\ x\ 30_ |INT |6 |0 |2024-10-01
+Sales | | |131 |Largactil\ 100mg\ tabs\ x30_ |UNI |6 |0 |2026-05-01
+Sales | | |5552 |Jardy\ Met\ 12.5/1000\ Tabs\ x\ 28_ |HYP |6 |0 |2025-02-01
+Sales | | |2044 |Powergra\ 100mg\ tabs\ x\ 4_ |UME |6 |2 |2025-08-01
+Sales |Pem\ Mahendradutt | |2009 |Powergra\ 50mg\ tabs\ x\ 4_ |UME |6 |2 |2026-09-01
+Sales |Pem\ Mahendradutt | |2009 |Powergra\ 50mg\ tabs\ x\ 4_ |UME |6 |0 |2026-09-01
+Sales |Theo\ Jose | |1066 |Lacson\ Syrup\ 150\ ml_ |ASP |6 |0 |2025-04-01
+Sales |Theo\ Jose | |1065 |Nazene\ Nasal\ Spray_ |ADC |6 |1 |2026-06-01
+Sales |Sylvie | |2044 |Powergra\ 100mg\ tabs\ x\ 4_ |UME |6 |1 |2025-08-01
+Sales |Surdharam\ R | |1066 |Lacson\ Syrup\ 150\ ml_ |ASP |6 |1 |2025-04-01
+Purchase |DC0000004 |IBL |9785 |dolo_10mg |APE |342 |10 |2027-07-01 |100.00

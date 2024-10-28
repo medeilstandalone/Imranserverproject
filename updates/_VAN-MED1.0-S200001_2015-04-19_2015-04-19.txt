@@ -1,0 +1,7 @@
+CustInfo |hari |23 |Male
+CustInfo |weqqq |27 |Male
+CustInfo |jack |23 |Male
+CustInfo |bala |23 |Male
+CustInfo |naveen |24 |Male
+CustInfo |anand |23 |Male
+CustInfo |sdfsdfsdfsdf |24 |Male

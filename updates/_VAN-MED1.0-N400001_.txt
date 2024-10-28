@@ -1,0 +1,46 @@
+Sales |Sylvie |Sondagur\ A\ R\ Z\ Dr |187 |Fem\ Bleach\ Blue\ 30gm_ |PUT |6 |1 |2035-01-01
+Sales |Sylvie |Sondagur\ A\ R\ Z\ Dr |1191 |Gees\ Linctus\ 200ml_ |CAR |5655 |1 |2026-05-01
+Sales |Sylvie | |1199 |Fem\ Saffron\ Bleach\ cream\ 24G_ |RAP |6 |1 |2035-01-01
+Sales | | |1191 |Gees\ Linctus\ 200ml_ |CAR |5655 |1 |2026-05-01
+Sales | | |1227 |Dextrolag\ Syrup\ 100ml_ |LAG |6 |1 |2025-04-01
+Sales |Sylvie |Kuppuswami\ K\ Dr |244 |Celestene\ 2mg\ Disp\ tabs_ |SCO |6 |10 |2025-01-01
+Sales |Sylvie |Kuppuswami\ K\ Dr |1191 |Gees\ Linctus\ 200ml_ |CAR |5655 |1 |2026-05-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |1432 |Heligo\ Kit\ tabs\ 7\ x\ 6_ |INT |6 |1 |2024-07-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |1199 |Fem\ Saffron\ Bleach\ cream\ 24G_ |RAP |6 |1 |2035-01-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |2667 |Veganin\ tabs\ x\ 30_ |UNI |6 |1 |2024-06-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |1111 |Nebilong\ 5mg\ tabs\ x\ 30_ |FTM |6 |1 |2024-09-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |1154 |Yesaka\ Anti\ Diabetic\ Drink\ 500ml_ |IND |6 |1 |2025-09-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |1143 |Depakine\ 500mg\ tabs\ x\ 40_ |PNL |6 |1 |2025-04-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |1785 |Beta\ S\ tabs\ x\ 90_ |NAT |6 |1 |2025-09-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |7192 |Earth\ Crea\ Melatonin\ 3mg\ +\ B6\ Tabs\ x_ |CUR |6 |1 |2024-07-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |2595 |Neurorubine\ Ampoule\ 3\ ml\ x\ 5_ |SOC |6 |1 |2026-02-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |141 |Zerodol\ Plus\ tab\ x30_ |UNI |6 |1 |2026-05-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |244 |Celestene\ 2mg\ Disp\ tabs_ |SCO |6 |1 |2025-01-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |2120 |Methotrexate\ 2.5mg\ tabs\ x\ 100_ |LED |6 |1 |2023-08-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |5251 |Vaseline\ Blue\ Seal\ 50gm_ |BOO |6 |1 |2026-03-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |1679 |Calmivet\ tabs\ x\ 20_ |VET |6 |1 |2026-04-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |4791 |Gaviscon\ Advance\ Liquid\ sachets\ x\ 12_ |BOO |6 |1 |2024-04-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |4319 |Xefo\ Injection\ x\ 5_ |BLY |6 |1 |2025-03-01
+Sales |Dodin\ Ornelle |Dr\ Hosany\ M\ N |1766 |Savlon\ 250ml_ |JOH |6 |1 |2026-08-01
+Sales | | |1200 |Fem\ Pearl\ Bleach\ Cream\ 24G_ |RAP |6 |1 |2035-01-01
+Sales | | |1153 |Beclomin\ Oint\ \ 15gm_ |LEB |6 |1 |2025-01-01
+Sales | | |1156 |Grilinctus\ Syrup\ 100ml_ |WAR |6 |1 |2025-01-01
+Sales | | |1111 |Nebilong\ 5mg\ tabs\ x\ 30_ |FTM |6 |1 |2024-09-01
+Sales | | |5961 |Xefo\ Rapid\ 8mg\ Tabs\ x\ 20\ (Unic)_ |UNI |6 |1 |2024-10-01
+Sales |Cash | |187 |Fem\ Bleach\ Blue\ 30gm_ |PUT |6 |1 |2035-01-01
+Sales |Cash | |1590 |Ventolin\ 4\ mg\ tabs\ x\ 120_ |GLA |6 |10 |2022-10-01
+Sales | | |1143 |Depakine\ 500mg\ tabs\ x\ 40_ |PNL |6 |1 |2025-04-01
+Sales | | |2422 |Cebran\ 500mg\ tabs\ x\ 20_ |BLU |6 |1 |2025-09-01
+Sales | | |2746 |Gentlemen\ Caps\ x\ 6_ |GEN |565 |1 |2026-02-01
+Sales | | |1227 |Dextrolag\ Syrup\ 100ml_ |LAG |6 |1 |2025-04-01
+Sales |Cash |Dr\ Hosany\ M\ N |1335 |Sargenor\ Vit\ C\ Amp\ x\ 20_ |FOR |6 |10 |2022-09-01
+Purchase |DC0000001 |Pharmacie\ Nouvelle\ Ltd |360 |Dexona\ tabs\ x100_ |CAD |54848 |10 |2026-05-01 |233.00
+Purchase |DC0000002 |Unicorn\ Ltd |295 |Feroglobin\ caps\ x30_ |VIT |64874 |10 |2026-05-01 |200.00
+Purchase |DC0000001 |Pharmacie\ Nouvelle\ Ltd |413 |Denk\ Simva\ 20mg\ tabs\ x30_ |PNL |48645 |10 |2026-02-01 |347.91
+Purchase |DC0000003 |Pharmacy\ \ A.E.\ Patel\ &\ Co |1191 |Gees\ Linctus\ 200ml_ |CAR |5655 |10 |2026-05-01 |110.00
+Purchase |DC0000003 |Pharmacy\ \ A.E.\ Patel\ &\ Co |828 |Gastrogel\ 150ml\ Susp_ |ASP |548748 |10 |2026-05-01 |150.00
+Purchase |DC0000005 |Scott\ Health\ Ltd |2746 |Gentlemen\ Caps\ x\ 6_ |GEN |565 |10 |2026-02-01 |400.00
+Purchase |DC0000005 |Scott\ Health\ Ltd |401 |Saforelle\ Creme\ (G)\ Creme\ 50ml_ |PIE |5656 |10 |2026-02-01 |250.00
+Purchase |DC0000001 |Pharmacie\ Nouvelle\ Ltd |384 |Ventolin\ Syrup\ 150ml_ |SEE |36565 |10 |2026-02-01 |140.00
+Purchase |DC0000001 |Pharmacie\ Nouvelle\ Ltd |186 |Bepanthen\ Pommade\ 30gm_ |UNI |6565 |10 |2026-02-01 |250.00
+Purchase |DC0000006 |Anichem\ Pharmacy |999 |Venavine\ Caps\ x\ 60_ |NAT |2355 |10 |2026-02-01 |300.00
